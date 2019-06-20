@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    >
+    <com.badoualy.stepperindicator.StepperIndicator
+        xmlns:tools="http://schemas.android.com/tools"  
+        android:id="@+id/stepper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:stpi_circleColor="@android:color/white"
+        app:stpi_indicatorColor="#81b71b"
+        app:stpi_lineDoneColor="#81b71b"
+    />
+</LinearLayout>
+
+
+
