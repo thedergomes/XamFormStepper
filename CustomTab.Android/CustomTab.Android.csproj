@@ -72,12 +72,34 @@
     <PackageReference Include="Karamunting.Android.Badoualy.StepperIndicator">
       <Version>1.0.7</Version>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Forms">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Svg">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <Version>28.0.0.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TabRenderer.cs" />
+    <Compile Include="Renderers\TabRenderer.cs" />
+    <Compile Include="Renderers\ReciclerView\MarketViewHolder.cs" />
+    <Compile Include="Renderers\ReciclerView\ProductAdapter.cs" />
+    <Compile Include="Renderers\ReciclerView\RecyclerViewRenderer.cs" />
+    <Compile Include="Renderers\RoundedEntryRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -107,6 +129,12 @@
     <AndroidResource Include="Resources\layout\CustomTab.axml" />
     <AndroidResource Include="Resources\drawable\tab_layout_selector.xml" />
     <AndroidResource Include="Resources\layout\Stepper.axml" />
+    <AndroidResource Include="Resources\layout\CategoriesLayout.axml" />
+    <AndroidResource Include="Resources\layout\ProductLayout.axml" />
+    <AndroidResource Include="Resources\layout\ProductLayout2.axml" />
+    <AndroidResource Include="Resources\drawable\placeholderimg.png" />
+    <AndroidResource Include="Resources\drawable\circulo.svg" />
+    <AndroidResource Include="Resources\drawable\cube.svg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -114,6 +142,7 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Renderers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CustomTab\CustomTab.csproj">

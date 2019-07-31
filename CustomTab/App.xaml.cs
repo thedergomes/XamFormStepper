@@ -11,8 +11,8 @@ namespace CustomTab
             InitializeComponent();
 
             //MainPage = new MainPage();
-            //MainPage = new MyPage();
-            MainPage = new NavigationPage(new TabbedPageCustom());
+            MainPage = new NavigationPage(new Views.Market.Version2.MarketMainPage());
+            //MainPage = new NavigationPage(new TabbedPageCustom());
         }
 
         protected override void OnStart()

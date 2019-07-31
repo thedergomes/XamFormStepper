@@ -12,15 +12,16 @@ using Android.Widget;
 //using Badoualy.StepperIndicatorLib;
 using CustomTab;
 using CustomTab.Droid;
+using CustomTab.Renderers.Droid;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms.Platform.Android.AppCompat;
 using AView = Android.Views.View;
-
+using Resource = CustomTab.Droid.Resource;
 using Stepper = Badoualy.StepperIndicatorLib;
 
 [assembly: ExportRenderer(typeof(TabbedPageCustom), typeof(TabRenderer))]
-namespace CustomTab.Droid
+namespace CustomTab.Renderers.Droid
 {
     public class TabRenderer : TabbedPageRenderer
     {
@@ -65,6 +66,7 @@ namespace CustomTab.Droid
 
             }
         }
+
         public int DpToPixels(float valueInDp)
         {
             Android.Util.DisplayMetrics metrics = Context.Resources.DisplayMetrics;
