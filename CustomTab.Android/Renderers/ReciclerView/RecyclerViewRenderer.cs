@@ -174,7 +174,7 @@ namespace CustomTab.Droid.Renderer.ReciclerView
             // If OldStartingIndex is not -1, then it contains the index where the old item was removed.
             if (e.Action == NotifyCollectionChangedAction.Remove)
             {
-                mAdapter.NotifyItemRemoved(e.NewStartingIndex);
+                mAdapter.NotifyItemRemoved(e.OldStartingIndex);
             }
         }
     }
